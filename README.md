@@ -73,6 +73,91 @@ ansible-scaffold ~/new_project -r webserver -r database -d site --force --no-pro
 
 ---
 
+### Sample Output
+
+```
+$ ansible-scaffold scaffold_demo -d demo -r apache
+
+📁 Creating Ansible scaffold at: /home/djones/ansible/scaffold_demo
+
+📂 Creating directory: /home/djones/ansible/scaffold_demo/inventory/group_vars/all
+📂 Creating directory: /home/djones/ansible/scaffold_demo/inventory/host_vars/all
+📂 Creating directory: /home/djones/ansible/scaffold_demo/inventory/hosts
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles
+📂 Creating directory: /home/djones/ansible/scaffold_demo/playbooks
+📂 Creating directory: /home/djones/ansible/scaffold_demo/facts_cache
+📄 Creating file: /home/djones/ansible/scaffold_demo/ansible.cfg
+📄 Creating file: /home/djones/ansible/scaffold_demo/ssh.config
+📄 Creating file: /home/djones/ansible/scaffold_demo/.gitignore
+📄 Creating file: /home/djones/ansible/scaffold_demo/inventory/group_vars/all/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/inventory/host_vars/all/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/inventory/hosts/main.yml
+
+📉 Ansible scaffold created successfully!
+
+🛠 Creating role 'apache' inside /home/djones/ansible/scaffold_demo/roles
+
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/defaults
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/files
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/handlers
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/meta
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/tasks
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/templates
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/tests
+📂 Creating directory: /home/djones/ansible/scaffold_demo/roles/apache/vars
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/defaults/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/handlers/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/meta/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/tasks/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/vars/main.yml
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/tests/inventory
+📄 Creating file: /home/djones/ansible/scaffold_demo/roles/apache/tests/test.yml
+
+📉 Role 'apache' created successfully!
+
+📄 Creating default playbook: /home/djones/ansible/scaffold_demo/playbooks/demo.yml
+📉 Default playbook 'demo' created at /home/djones/ansible/scaffold_demo/playbooks/demo.yml
+
+📁 Project Structure:
+scaffold_demo/
+    📄 .gitignore
+    📄 ansible.cfg
+    📄 ssh.config
+    📂 roles
+        📂 apache
+            📂 defaults
+                📄 main.yml
+            📂 templates
+            📂 vars
+                📄 main.yml
+            📂 tests
+                📄 inventory
+                📄 test.yml
+            📂 files
+            📂 handlers
+                📄 main.yml
+            📂 meta
+                📄 main.yml
+            📂 tasks
+                📄 main.yml
+    📂 inventory
+        📂 group_vars
+            📂 all
+                📄 main.yml
+        📂 hosts
+            📄 main.yml
+        📂 host_vars
+            📂 all
+                📄 main.yml
+    📂 playbooks
+        📄 demo.yml
+    📂 facts_cache
+
+📉 Done!
+```
+
+---
+
 ## 👉 Features
 
 - Fast and clean structure generation
@@ -102,3 +187,4 @@ MIT License
 - Optional support for ansible-vault starter integration
 - Project templates (for common layouts)
 - Plugin-based architecture for customizations
+
