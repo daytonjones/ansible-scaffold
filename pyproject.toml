@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ansible-scaffold"
+version = "1.0.0"
+description = "Create a clean starter Ansible scaffold structure quickly."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+authors = [
+  { name = "Dayton Jones" }
+]
+keywords = ["ansible", "ansible-playbook", "ansible-roles", "devops", "automation", "cli-tool", "python3"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities"
+]
+dependencies = [
+  "colorama"
+]
+
+[project.urls]
+Homepage = "https://github.com/daytonjones/ansible-scaffold"
+Source = "https://github.com/daytonjones/ansible-scaffold"
+Tracker = "https://github.com/daytonjones/ansible-scaffold/issues"
+
+[project.scripts]
+ansible-scaffold = "ansible_scaffold:main"
+
