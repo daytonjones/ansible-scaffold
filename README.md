@@ -1,4 +1,12 @@
 # Ansible Scaffold
+[![GitHub release](https://img.shields.io/github/v/release/daytonjones/ansible-scaffold?sort=semver)](https://github.com/daytonjones/ansible-scaffold/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/network/members)
+[![License](https://img.shields.io/github/license/daytonjones/ansible-scaffold)](https://github.com/daytonjones/ansible-scaffold/blob/main/LICENSE)
+---
 
 Create a clean, starter **Ansible scaffold** structure easily and quickly.
 
