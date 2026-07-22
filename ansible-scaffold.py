@@ -68,7 +68,7 @@ inventory = inventory
 playbook_dir = playbooks
 retry_files_enabled = False
 roles_path = roles
-stdout_callback = yaml
+result_format = yaml
 timeout = 30
 transport = ssh
 
